@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import "./Game.css";
+import { useNavigate } from "react-router-dom";
 import DisplayWinner from "./DisplayWinner";
 
 const NUM_OF_PITS = 7;
@@ -10,6 +11,15 @@ enum Side {
 }
 
 export default function Game() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    console.log("reload");
+    const handleBeforeUnload = () => {
+      navigate("/");
+    };
+    window.addEventListener("beforeUnload", handleBeforeUnload);
+  }, [navigate]);
+
   const [turn, setTurn] = useState(Side.Player);
   const [winnerMessage, setWinnerMessage] = useState<string | undefined>();
   const [marblesLeftInHand, setMarblesLeftInHand] = useState(0);
