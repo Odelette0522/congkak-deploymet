@@ -1,0 +1,68 @@
+.congkak-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pits-container {
+  display: flex;
+  width: 100%;
+  max-width: 80rem;
+  padding: 1.25rem;
+  justify-content: center;
+  border-radius: 9.375rem;
+  border: solid 3px #3e230c;
+  background-color: #5d3717c8;
+  column-gap: 1rem;
+}
+
+.opponent-pits,
+.player-pits {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.opponent-pits {
+  margin-bottom: 0.625rem;
+}
+
+.player-pits {
+  flex-direction: row-reverse;
+}
+
+.player-button {
+  padding: 0;
+}
+
+.opponent-marble,
+.player-button {
+  border-radius: 50%;
+  border: solid 3px #3e230c;
+  background-color: #533011;
+  width: 6.25rem;
+  height: 6.25rem;
+  font-size: 3.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+}
+
+.opponent-storehouse,
+.player-storehouse {
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  border: solid 3px #3e230c;
+  background-color: #533011;
+  font-size: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.storehouse-container {
+  display: flex;
+  align-items: center;
+}

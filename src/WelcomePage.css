@@ -1,0 +1,153 @@
+body {
+  background-color: #825740;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #bb866b;
+  text-align: center;
+  text-shadow: #000000a5 5px 5px 3px;
+  font-size: 5.625rem;
+  margin: 1.5rem;
+}
+
+img {
+  margin: 0 auto;
+  width: 43.75rem;
+}
+
+.start-game-button,
+.show-rule-button,
+.display-winner-button {
+  display: block;
+  background-color: #6e452f;
+  font-size: 3rem;
+  font-weight: 600;
+  padding: 0.9375rem;
+  border-radius: 3.125rem;
+  box-shadow: #00000080 0 0.9375rem 0.3125rem;
+  border: none;
+}
+
+.button-container {
+  width: 100%;
+}
+
+.wrap-button {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-button {
+  flex-direction: column;
+}
+
+.start-game-button,
+.show-rule-button {
+  width: 100%;
+}
+
+.show-rule-button {
+  margin-top: 2.5rem;
+}
+
+.start-game-button:active,
+.show-rule-button:active {
+  background-color: #aa795f;
+  border: none;
+}
+
+.start-game-button:hover,
+.show-rule-button:hover,
+.display-winner-button:hover {
+  border: none;
+  transform: translateY(2px);
+  color: #3a1c0d98;
+}
+
+.close-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  border: none;
+  background-color: #ffffff00;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button:hover {
+  background-color: #6e452f;
+  border-radius: 50%;
+}
+.heading-two {
+  text-align: center;
+  font-size: 2rem;
+}
+
+iframe {
+  width: 34.375rem;
+  height: 19.375rem;
+  border: none;
+  border-radius: 0.625rem;
+}
+
+li {
+  font-weight: bold;
+}
+
+span {
+  font-weight: normal;
+}
+
+.popup-container {
+  position: relative;
+  background-color: #cba895;
+  margin: 5rem;
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  padding: 2.5rem;
+}
+
+.close-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rule-container {
+  overflow: auto;
+  scrollbar-color: #00000080 #00000000;
+  height: 100%;
+  font-size: 1.125rem;
+}
+
+.main-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

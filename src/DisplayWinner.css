@@ -1,0 +1,30 @@
+.shade-layer {
+  background-color: #ffffff4d;
+}
+
+.display-winner-popup {
+  width: 80%;
+  max-width: 800px;
+  background-color: #4d2c14;
+  border-radius: 2rem;
+  border: 5px solid #331a09;
+  padding: 3rem;
+}
+
+.winner-message {
+  font-size: 5rem;
+  color: #3a1c0d;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.winner-button-container {
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.display-winner-button {
+  width: 50%;
+  max-width: 300px;
+}
